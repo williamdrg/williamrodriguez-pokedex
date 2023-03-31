@@ -11,9 +11,3 @@
 	-webkit-appearance: none;
 	-moz-appearance: none;
 }
-
-
-/* Eliminamos la fecha que por defecto aparece en el desplegable */
-/* .content-select select::-ms-expand {
-    display: none;
-} */

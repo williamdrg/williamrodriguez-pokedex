@@ -33,8 +33,14 @@ const PokemonsList = ({pokemons, setPokemons}) => {
     }
     
     const getPagination = (totalPages) => {
-        const maxPages = 10;
-        const start = Math.max(1, Math.min(page - 6, totalPages - maxPages + 1));
+        let maxPages = 10
+        let start
+        if (screen.width <= 425) {
+            maxPages = 4
+            start = Math.max(1, Math.min(page - 2, totalPages - maxPages + 1));
+        } else {
+            start = Math.max(1, Math.min(page - 6, totalPages - maxPages + 1));
+        }
         const end = Math.min(start + maxPages - 1, totalPages); 
         const pagination = [];
         for (let i = start; i <= end; i++) {

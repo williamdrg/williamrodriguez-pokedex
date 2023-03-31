@@ -46,7 +46,7 @@ const Pokedex = () => {
 
         <div className="fondo_glass"><img src="/fondopokedex.png" alt="" /></div>
       <div className="fondo_pokedex"><img src={showGif ? "/animacionPoke.gif" : "/circle.png"} alt="" /></div>
-      <div className="back" onClick={() => navigate(-1)}><img src="/back2.png" alt="image the back to" />Back</div>
+      <div className="back" onClick={() => navigate(-1)}><img src="/back2.png" alt="image the back to" /></div>
       <div className="title_card"> <h1>welcome <span>{userName}</span>, here you can find your favorite pokemon </h1> </div>
       
       <div className="input2_container"> 
