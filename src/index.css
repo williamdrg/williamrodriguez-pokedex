@@ -1,0 +1,19 @@
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.content_select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+
+/* Eliminamos la fecha que por defecto aparece en el desplegable */
+/* .content-select select::-ms-expand {
+    display: none;
+} */
