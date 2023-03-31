@@ -1356,7 +1356,7 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
   }
 
   .title_card h1 {
-    margin-top: 0;
+    margin-top: 19px;
   }
 
   .logo {
@@ -1371,8 +1371,11 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
   display: none;
 }
 
+.frame_open {
+  display: none;
+}
+
 .pokedex_container {
-  border: 1px solid beige;
   height: 570px;
   margin-top: 20px;
 }
@@ -1402,4 +1405,32 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
 }
 
 
+}
+
+@media screen and (max-width: 375px) {
+  .pokedex_container { height: 500px }
+
+  .dragon, .circle {
+    width: 210px;
+    top: -85px;
+    right: 0;
+  }
+  
+  .play {
+    width: 40px;
+    top: -85px;
+    left: -60px;
+  }
+  
+  .pause {
+    width: 40px;
+    top: -86px;
+    right: -55px;
+  }
+  
+  .arrows {
+    width: 65px;
+    top: 110px;
+    right: 74px;
+  }
 }
