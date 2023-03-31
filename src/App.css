@@ -734,6 +734,7 @@
     left: 0;
     overflow: hidden;
     box-shadow: 0 0 10px 2px #ff4d00;
+    z-index: 1;
   }
 
   .circle5 {
@@ -809,8 +810,6 @@
       height: 95px;
     }
     }
-
-
   
   .title_card span {
     background: linear-gradient(to top, #0007c6, #350000, rgb(217, 1, 1));
@@ -975,6 +974,7 @@ dos bordes con color y que giramos con transform: rotate(-45deg);
   bottom: 10px;
   user-select: none;
   padding-right: 10px;
+  z-index: 1;
 }
 
 .page_container .icon {
