@@ -13,6 +13,8 @@ const Pokedex = () => {
   const [search, setSearch] = useState('')
   const [showGif, setShowGif] = useState(true)
 
+
+
   useEffect (()=> {
     getPokemons()
     setTimeout(() => {
@@ -21,12 +23,15 @@ const Pokedex = () => {
 
   },[])
 
+
+
   const getPokemons = () => {
     axios
         .get('https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1281')
         .then(resp => setPokemons(resp.data))
         .catch(error => console.error(error))
   }
+
 
   return (
     <div className="poke_card_container">
@@ -54,7 +59,7 @@ const Pokedex = () => {
           onChange={e => setSearch(e.target.value)}
           value = {search}
           className="input input2"
-        /> 
+        />
 
         <button 
           onClick={() => navigate(`/pokedex/${search}`)}

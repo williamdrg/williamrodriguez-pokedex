@@ -398,9 +398,6 @@
 
 
 /* cartas de pokemon */
-/* .card_container {
-  margin-top: 80px;
-} */
 
 .cards_container {
     display: flex;
@@ -412,6 +409,7 @@
     overflow: auto;
     scroll-margin: auto;
     padding-top: 10px;
+    flex-grow: 1;
   }
   
   .perspetive {
